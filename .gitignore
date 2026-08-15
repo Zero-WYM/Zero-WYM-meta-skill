@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# WorkBuddy / OS
+.workbuddy/
+.DS_Store
+Thumbs.db
+
+# Build / dist artifacts
+*.zip
+*.tar.gz
+dist/
+build/
