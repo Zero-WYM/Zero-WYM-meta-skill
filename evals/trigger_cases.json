@@ -1,0 +1,54 @@
+{
+  "skill": "Zero-WYM-meta-skill",
+  "description": "三桶触发用例：该触发 / 不该触发 / 近邻场景。供 scripts/trigger_eval.py 跑 pass_rate。",
+  "cases": [
+    {
+      "bucket": "should_trigger",
+      "text": "把这个流程做成 skill"
+    },
+    {
+      "bucket": "should_trigger",
+      "text": "帮我做个 skill 专门干整理抖音截图"
+    },
+    {
+      "bucket": "should_trigger",
+      "text": "我的 skill 触发不了，看看描述"
+    },
+    {
+      "bucket": "should_trigger",
+      "text": "给我这个 skill 过一遍质检"
+    },
+    {
+      "bucket": "should_trigger",
+      "text": "把我的 skill 打个分"
+    },
+    {
+      "bucket": "should_trigger",
+      "text": "把我的 skill 发到 GitHub 上"
+    },
+    {
+      "bucket": "should_not_trigger",
+      "text": "从市场安装 obsidian skill"
+    },
+    {
+      "bucket": "should_not_trigger",
+      "text": "skillhub 今天推荐啥"
+    },
+    {
+      "bucket": "should_not_trigger",
+      "text": "整理第二大脑里的素材"
+    },
+    {
+      "bucket": "near_miss",
+      "text": "对比 skill-crafting 和这个工具哪个更好用"
+    },
+    {
+      "bucket": "near_miss",
+      "text": "把一个旧 skill 迁移到别处怎么弄"
+    },
+    {
+      "bucket": "near_miss",
+      "text": "这个 skill 占多大空间能删吗"
+    }
+  ]
+}
