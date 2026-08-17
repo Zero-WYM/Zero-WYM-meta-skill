@@ -20,12 +20,14 @@ from typing import Any
 SCRIPT_DIR = Path(__file__).resolve().parent
 # 仓库真源：可用环境变量覆盖（默认用户的第二大脑）；避免硬编码、便于迁移
 VAULT_DIR = Path(os.environ.get("OBSIDIAN_VAULT_DIR", "D:/第二大脑"))
-# 导出目录默认放在包体【外】（用户缓存区），可用环境变量覆盖，避免污染 Skill 包
+# 导出目录：默认与 sync_to_feishu.py 对齐到 SCRIPT_DIR/export（两脚本同目录，路径解析一致）。
+# 若需放到包体外，设环境变量 OBSIDIAN_SYNC_EXPORT_DIR 即可，sync 端同步读取同一变量，两侧始终一致。
+# 修复：旧默认 ~/.cache/obsidian-kb-sync/export 与 sync 读取的 SCRIPT_DIR/export 错位，导致清单读取失败。
 EXPORT_DIR = Path(os.environ.get(
     "OBSIDIAN_SYNC_EXPORT_DIR",
-    str(Path.home() / ".cache" / "obsidian-kb-sync" / "export"),
+    str(SCRIPT_DIR / "export"),
 ))
-# manifest 与导出产物同目录，统一在包体外，避免污染包体
+# manifest 与导出产物同目录，且与 sync_to_feishu.py 读取路径一致
 MANIFEST_PATH = EXPORT_DIR / "manifest.json"
 
 # 附件扩展名（与 sync_to_feishu.py 共享）
