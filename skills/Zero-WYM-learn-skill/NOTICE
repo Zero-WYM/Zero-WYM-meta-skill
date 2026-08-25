@@ -1,0 +1,29 @@
+# NOTICE — Zero-WYM-learn-skill 署名与改造声明
+
+## 上游与许可
+- 本 skill 派生（fork）自 **qiaomu-learning**
+  - 原作者：向阳乔木
+  - 原许可：MIT License（见 LICENSE 文件，必须保留）
+  - 原仓库：https://github.com/joeseesun/qiaomu-learning
+  - 上游版本：v2.1.0（含自包含网页学习模式）
+- 本 skill 的 MIT 许可继承自上游；原作者 向阳乔木 的版权声明在 LICENSE 中保留，不得删除。
+
+## 品牌改造方
+- 改造与品牌化：Zero-WYM（零-望月明工作台）自建 Skill 生态
+- 改造依据：Zero-WYM-meta-skill 工厂流程（查重 → 生成 → 量化门禁 → 安装）
+
+## 方法论归属
+- 「逆向—费曼—苏格拉底 三位一体自学方法论」归属 **Master**（用户）。
+- 该方法论由 Master 与 AI 协作试炼成型，并融合 qiaomu-learning 的受治理苏格拉底引擎。
+
+## 改造清单（相对上游 qiaomu-learning）
+1. 新增「逆向模式（输入）」：自顶向下拆解、知识地图、最小例子/思想实验/类比（非代码优先）。
+2. 新增「费曼模式（输出）」：AI 扮小白只追问不给药，含「拓展层」主动深化（基于回答往前推一层、反向质疑、戳矛盾、full-circle、用 learner 自身例子反将）。
+3. 新增「水平感知与领域适配」：开场判定 novice/intermediate/advanced 与领域；非编程/零基础默认非代码交付 + 词汇地基；识别「学过但没实操」中间态。
+4. 新增「五步循环编排」：逆向→费曼→苏格拉底→费曼→应用验证 的状态机，维护 loop-state 与 blind_spots 账本。
+5. 保留上游受治理苏格拉底引擎（一轮一问 / 12词地图 / 累积黑板 / 来源忠实 / 掌握门）作为「加工」模式。
+6. 删除上游个人推广内容（向阳乔木简介、打赏/公众号二维码、X/GitHub 推广链接）、治理文件（manifest.json / agents / scripts / evals / tests / reports）与 assets 二进制。
+
+## 未修改即继承的部分
+- references/socratic-protocol.md、keyword-learning.md、self-evolution.md、blackboard-teaching.md、teaching-clarity.md、story-visual-learning.md 为上游技术内容，基本原样保留（仅 web-learning.md 内 "qiaomu-learning" 字面引用改为本 skill 名）。
+- LICENSE 原样保留。
