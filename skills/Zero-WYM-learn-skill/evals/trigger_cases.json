@@ -1,0 +1,17 @@
+{
+  "skill": "Zero-WYM-learn-skill",
+  "cases": [
+    {"bucket": "should_trigger", "text": "带我学 RAG 的基本概念"},
+    {"bucket": "should_trigger", "text": "苏格拉底式学习：讲讲微积分"},
+    {"bucket": "should_trigger", "text": "逐问带我学：变量的含义"},
+    {"bucket": "should_trigger", "text": "费曼法：让我讲给小白听"},
+    {"bucket": "should_trigger", "text": "逆向法：给我最小例子拆解一下"},
+    {"bucket": "should_trigger", "text": "画知识地图：帮我入门哲学"},
+    {"bucket": "should_trigger", "text": "互动学习页：复习这个主题"},
+    {"bucket": "should_not_trigger", "text": "帮我写一首关于春天的诗"},
+    {"bucket": "should_not_trigger", "text": "直接翻译这段英文"},
+    {"bucket": "should_not_trigger", "text": "查一下明天的天气"},
+    {"bucket": "near_miss", "text": "生成一张学习主题的海报"},
+    {"bucket": "near_miss", "text": "帮我出一份数学练习题题库"}
+  ]
+}
